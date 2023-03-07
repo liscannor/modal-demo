@@ -116,7 +116,7 @@
 }
 
 .table-form-input:focus::placeholder {
-  opacity: 1;
+  opacity: 0;
 }
 
 .table-form-field {
@@ -128,9 +128,6 @@
   letter-spacing: 0.18em;
   color: #d8d7d7;
   text-transform: uppercase;
-}
-
-.table-form-field:not(last-child) {
   margin-bottom: 32px;
 }
 
@@ -165,9 +162,9 @@
 
 .select-items div,
 .select-selected {
+  border: none;
   padding: 5px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent #f6f6f6 transparent;
+
   cursor: pointer;
   user-select: none;
 }
@@ -193,6 +190,7 @@
 }
 
 .select-items div {
+  border: 1px solid #f6f6f6;
   background-color: #ccc;
   color: #121212;
 }
@@ -200,4 +198,93 @@
 .select-items div:hover,
 .same-as-selected {
   background-color: #f6f6f6;
+}
+
+/* table-custom-date */
+
+input#custom-input-date,
+label {
+  display: block;
+  outline: none;
+}
+
+.table-custom-date {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.table-label-date {
+  height: 100%;
+  margin: 8px 0 0 0;
+}
+
+input#custom-input-date {
+  width: 100%;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #f6f6f6;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.8px solid rgba(246, 246, 246, 0.2);
+  outline: transparent;
+  padding: 0 0 18px 0;
+  cursor: pointer;
+}
+
+input#custom-input-date::placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #f6f6f6;
+  opacity: 1;
+}
+
+input#custom-input-date:focus::placeholder {
+  opacity: 0;
+}
+.datepicker-panel {
+  left: 50px;
+  color: #121212;
+}
+
+input.calendar {
+  background-image: url('https://bytebucket.org/fuoricitta/form-best-practice/raw/197f5e38bea1d53b52102b6c98e0e6b129dd6908/Examples/assets/img/calendar.png?token=b57efe00e0e5d28327a3b62e263519c284c70d53');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.table-form-tel {
+  margin: 0;
+}
+
+/* mod-tab-reserv */
+
+.mod-tab-btn {
+  display: flex;
+  color: #f7f7f7;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  background-color: #121212;
+  padding: 8px 18px;
+  margin: 40px auto 0;
+  border: 0.8px solid #f7f7f7;
+  border-radius: 32px;
+}
+
+.mod-tab-btn:hover,
+.mod-tab-btn:focus {
+  color: #121212;
+  background-color: #f7f7f7;
 }

@@ -17,8 +17,15 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@400;700&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css"
+      integrity="sha512-YdYyWQf8AS4WSB0WWdc3FbQ3Ypdm0QCWD2k4hgfqbQbRCJBEgX0iAegkl2S1Evma5ImaVXLBeUkIlP6hQ1eYKQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/modal-btn.css" />
+    <link rel="stylesheet" href="./css/modal-demo.css" />
   </head>
   <body>
     <div class="page">
@@ -836,20 +843,37 @@
                   <use href="./images/icons.svg#select"></use>
                 </svg>
               </div>
-              <div class="input-field">
+              <div class="table-custom-date">
                 <input
                   id="custom-input-date"
                   class="calendar"
                   type="text"
                   name="upload-release"
                   placeholder="today"
+                  ,
+                  autocomplete="off"
                 />
                 <svg class="select-icon" width="12" height="8">
                   <use href="./images/icons.svg#select"></use>
                 </svg>
-                <label class="table-form-field">What date to book?</label>
-                <p class="label-error"></p>
+                <label class="table-form-field table-label-date"
+                  >What date to book?</label
+                >
               </div>
+              <label class="table-form-field table-form-tel">
+                <input
+                  class="table-form-input"
+                  type="tel"
+                  name="user_phone"
+                  placeholder="+38 ()"
+                  id="phone"
+                  required
+                />
+                <span class="table-form-label">phone number</span>
+              </label>
+              <button class="mod-tab-btn" type="submit">
+                MAKE A RESERVATION
+              </button>
             </div>
           </form>
         </div>
@@ -959,9 +983,28 @@
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"
       ></script>
+      <script
+        src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+        integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"
+        integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+        integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
       <script defer src="js/mobile-menu.js"></script>
       <script src="./js/modal.js"></script>
       <script src="./js/custom-select.js"></script>
+      <script src="./js/custom-date.js"></script>
+      <script src="./js/mask-phone.js"></script>
     </div>
   </body>
 </html>
