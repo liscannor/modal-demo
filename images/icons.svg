@@ -117,5 +117,13 @@
         <symbol id="menu-hamburgers" viewBox="0 0 32 22">
             <path d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861" />
         </symbol>
+        <symbol id="close-demo" viewBox="0 0 14 14">
+            <path d="M12.8337 1.16663L1.16699 12.8333M1.16699 1.16663L12.8337 12.8333" stroke="#F7F7F7"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="select" viewBox="0 0 12 8" fill="none">
+            <path d="M1 1.5L6 6.5L11 1.5" stroke="#F7F7F7" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
     </defs>
 </svg>

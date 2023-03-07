@@ -1045,7 +1045,7 @@ footer .logo-text {
 
 /* modal */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -1068,7 +1068,7 @@ footer .logo-text {
   left: 50%;
   padding: 24px 16px 24px 16px;
   /* z-index: 10; */
-  transform: translateX(-50%) translateY(-50%);
+/* transform: translateX(-50%) translateY(-50%);
   width: 392px;
   min-height: 586px;
   background-color: var(--modal-bg-color);
@@ -1084,9 +1084,9 @@ footer .logo-text {
     width: 408px;
     min-height: 576px;
   }
-}
+} */
 
-.backdrop.is-hidden .modal {
+/* .backdrop.is-hidden .modal {
   transform: translateX(-50%) translateY(0%);
   opacity: 0;
 }
@@ -1108,11 +1108,11 @@ footer .logo-text {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-}
+} */
 
 /* modal-form */
 
-.modal-title {
+/* .modal-title {
   display: block;
   margin-bottom: 16px;
   text-align: center;
@@ -1231,7 +1231,7 @@ footer .logo-text {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
+}  */
 
 /* Mobile-menu  */
 
