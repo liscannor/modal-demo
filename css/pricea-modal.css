@@ -1,5 +1,3 @@
-/* modal */
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -25,7 +23,7 @@
   /* z-index: 10; */
   transform: translateX(-50%) translateY(-50%);
   width: 335px;
-  min-height: 528px;
+  min-height: 414px;
   background-color: #121212;
   border-radius: 2px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -36,7 +34,7 @@
   .modal {
     padding: 32px 32px 60px 32px;
     width: 628px;
-    min-height: 476px;
+    min-height: 430px;
   }
 }
 
@@ -72,7 +70,7 @@
 
 /* modal-form */
 
-.table-modal-title {
+.price-modal-title {
   display: block;
   margin-bottom: 40px;
   text-align: left;
@@ -82,38 +80,58 @@
   line-height: 1.36;
   letter-spacing: -0.02em;
   color: #f6f6f6;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
-  .table-modal-title {
+  .price-modal-title {
     font-size: 36px;
     line-height: 1.11;
     margin-bottom: 60px;
   }
 }
 
-.table-modal-title-acсent {
+.price-modal-title-acсent {
   font-style: italic;
 }
 
+.price-modal-text {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: #f6f6f6;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
 @media screen and (min-width: 768px) {
-  .table-form-group {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 40px;
-    column-gap: 32px;
-    flex-basis: calc((100% - (32px * 1)) / 2);
+  .price-modal-text {
+    margin-bottom: 32px;
+  }
+}
+
+.price-item-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .price-item-wrap {
+    flex-direction: row;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .table-form-item {
+  .price-form-item {
     width: 266px;
     flex-basis: calc((100% - (32px * 1)) / 2);
   }
 }
 
-.table-form-input {
+.price-form-input {
   position: relative;
   width: 100%;
   height: 36px;
@@ -132,7 +150,7 @@
   padding: 0 0 18px 0;
 }
 
-.table-form-input::placeholder {
+.price-form-input::placeholder {
   position: absolute;
   top: 0;
   left: 0;
@@ -146,11 +164,11 @@
   opacity: 1;
 }
 
-.table-form-input:focus::placeholder {
+.price-form-input:focus::placeholder {
   opacity: 0;
 }
 
-.table-form-field {
+.price-form-field {
   display: block;
   font-family: DM Sans;
   font-size: 8px;
@@ -159,20 +177,13 @@
   letter-spacing: 0.18em;
   color: #d8d7d7;
   text-transform: uppercase;
-  margin-bottom: 32px;
 }
 
-@media screen and (min-width: 768px) {
-  .table-form-field {
-    margin-bottom: 0;
-  }
-}
+/* price-custom-select */
 
-/* table-custom-select */
-
-.table-custom-select {
+.price-custom-select {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 8px;
   font-family: DM Sans;
   font-size: 14px;
   font-weight: 400;
@@ -182,13 +193,7 @@
   color: #f6f6f6;
 }
 
-@media screen and (min-width: 768px) {
-  .table-custom-select {
-    margin-bottom: 0;
-  }
-}
-
-.table-custom-select select {
+.price-custom-select select {
   display: none;
 }
 
@@ -245,97 +250,12 @@
   background-color: #f6f6f6;
 }
 
-/* table-custom-date */
+/* mod-price-reserv */
 
-input#custom-input-date,
-label {
-  display: block;
-  outline: none;
-}
-
-.table-custom-date {
-  position: relative;
-  margin-bottom: 32px;
-}
-
-@media screen and (min-width: 768px) {
-  .table-custom-date {
-    margin-bottom: 0;
-  }
-}
-
-.table-label-date {
-  height: 100%;
-  margin: 8px 0 0 0;
-}
-
-input#custom-input-date {
-  width: 100%;
-  font-family: DM Sans;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: #f6f6f6;
-  background-color: transparent;
-  border: none;
-  border-bottom: 0.8px solid rgba(246, 246, 246, 0.2);
-  outline: none;
-  padding: 0 0 18px 0;
-  cursor: pointer;
-}
-
-input#custom-input-date::placeholder {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-family: DM Sans;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: #f6f6f6;
-  opacity: 1;
-}
-
-input#custom-input-date:focus::placeholder {
-  opacity: 0;
-}
-.datepicker-panel {
-  left: 50px;
-  color: #121212;
-}
-
-input.calendar {
-  background-image: url('https://bytebucket.org/fuoricitta/form-best-practice/raw/197f5e38bea1d53b52102b6c98e0e6b129dd6908/Examples/assets/img/calendar.png?token=b57efe00e0e5d28327a3b62e263519c284c70d53');
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-}
-
-.table-form-tel {
-  margin: 0;
-}
-
-/* check-custom-date */
-
-.check-custom-date {
-  position: relative;
-  margin-bottom: 32px;
-}
-
-@media screen and (min-width: 768px) {
-  .check-custom-date {
-    margin-bottom: 0;
-  }
-}
-
-/* mod-tab-reserv */
-
-.mod-tab-btn {
+.mod-price-btn {
   display: flex;
   justify-content: center;
+  width: 235px;
   color: #f7f7f7;
   font-size: 14px;
   line-height: 18px;
@@ -349,22 +269,23 @@ input.calendar {
 }
 
 @media screen and (min-width: 768px) {
-  .mod-tab-btn {
+  .mod-price-btn {
     width: 399px;
     line-height: 1.71;
+    margin-top: 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .mod-tab-btn {
+  .mod-price-btn {
     width: 444px;
     font-size: 18px;
     line-height: 1.33;
   }
 }
 
-.mod-tab-btn:hover,
-.mod-tab-btn:focus {
+.mod-price-btn:hover,
+.mod-price-btn:focus {
   color: #121212;
   background-color: #f7f7f7;
 }
